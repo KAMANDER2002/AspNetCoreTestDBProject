@@ -1,0 +1,22 @@
+﻿@model CompMarketReal.Helpers.ViewModels.ComponentViewModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+ @foreach(var component in Model.components)
+ {
+     <div class="coll-md4">@component.Name</div>
+     
+ }
+ <select>
+ @foreach(var compType in Model.componetnTypes)
+ {
+     <option> @compType.Name </option>
+ }
+ </select>

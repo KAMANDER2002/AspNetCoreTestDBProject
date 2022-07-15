@@ -1,0 +1,17 @@
+﻿@using CompMarketReal.Models.Data.Tovars
+@model Computer
+@{
+    ViewData["Title"] = "UpdateTovar";
+}
+<h1>UpdateTovar</h1>
+<div>
+    <form asp-action="UppDateComputer">      
+        <input asp-for="ComputerName"/>     
+        <input asp-for="Price"/>
+        <input asp-for="Description"/>
+        <input asp-for="Discount"/>
+        <input asp-for="Created"/>
+        <input asp-for="imageSource" />
+        <input type="submit" />
+    </form>
+</div>

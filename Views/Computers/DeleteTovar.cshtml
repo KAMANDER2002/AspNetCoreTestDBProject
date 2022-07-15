@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "DeleteTovar";
+}
+@model CompMarketReal.Models.Data.Tovars.Computer;
+<h1>DeleteTovar</h1>
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Users</h4>
+    <hr />
+    </div>
+    <div>
+        @Model.ComputerName <br />
+        @Model.Price <br />
+        @Model.Description <br />
+        @Model.imageSource <br />
+        @Model.Discount <br />
+        @Model.Created <br />
+    </div>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>

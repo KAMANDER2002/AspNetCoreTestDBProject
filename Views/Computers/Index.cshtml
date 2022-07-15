@@ -1,0 +1,21 @@
+﻿@using CompMarketReal.Models.Data.Tovars
+@using CompMarketReal.Models.Repositorys.TovarsRepositorys.Interfaces
+@{
+    ViewData["Title"] = "Index";
+   
+}
+@model IEnumerable<Computer>
+
+<h1>Index</h1>
+@foreach(var comp in Model)
+{
+    <h3>@comp.ComputerName</h3>
+    <h3>@comp.Created</h3>
+    <h3>@comp.Description</h3>
+    <h3>@comp.Price</h3>
+    <a asp-action="DeleteTovar" asp-route-id="@comp.id">Удалить товар</a>
+    <a asp-action="UppDateComputer" asp-route-id="@comp.id">Редактировать товар</a>
+}
+<div>
+    <a asp-action="AddTovar">Добавить новый пк</a>
+</div>

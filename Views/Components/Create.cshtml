@@ -1,0 +1,92 @@
+﻿@model CompMarketReal.Models.Data.Tovars.ComputerItems.Components;
+@using CompMarketReal.Models.Data.Tovars.ComputerItems;
+@using CompMarketReal.Models
+@{
+    ViewData["Title"] = "Create";
+     
+}
+
+<h1>Create</h1>
+
+<h4>Components</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnergoPotrebl" class="control-label"></label>
+                <input asp-for="EnergoPotrebl" class="form-control" />
+                <span asp-validation-for="EnergoPotrebl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Seria" class="control-label"></label>
+                <input asp-for="Seria" class="form-control" />
+                <span asp-validation-for="Seria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateCreate" class="control-label"></label>
+                <input asp-for="DateCreate" class="form-control" />
+                <span asp-validation-for="DateCreate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpeedChtenia" class="control-label"></label>
+                <input asp-for="SpeedChtenia" class="form-control" />
+                <span asp-validation-for="SpeedChtenia" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SpeedWrite" class="control-label"></label>
+                <input asp-for="SpeedWrite" class="form-control" />
+                <span asp-validation-for="SpeedWrite" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Socket" class="control-label"></label>
+                <input asp-for="Socket" class="form-control" />
+                <span asp-validation-for="Socket" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Slots" class="control-label"></label>
+                <input asp-for="Slots" class="form-control" />
+                <span asp-validation-for="Slots" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeCollers" class="control-label"></label>
+                <input asp-for="TypeCollers" class="form-control" />
+                <span asp-validation-for="TypeCollers" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DDRType" class="control-label"></label>
+                <input asp-for="DDRType" class="form-control" />
+                <span asp-validation-for="DDRType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Volts" class="control-label"></label>
+                <input asp-for="Volts" class="form-control" />
+                <span asp-validation-for="Volts" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

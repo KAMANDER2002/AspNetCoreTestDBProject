@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "AddTovar";
+}
+@model CompMarketReal.Helpers.ViewModels.ComputersViewModel
+<h1>AddTovar</h1>
+<div>
+    <form asp-action="AddTovar">
+        <label asp-for="ComputerName"></label>
+        <input asp-for="ComputerName" placeholder="Название комьютера" />
+        <label asp-for="Price"></label>
+        <input asp-for="Price" placeholder="Цена" />
+        <label asp-for="ComputerName">Введите название комьютера</label>
+        <input asp-for="Description" placeholder="Описание" />
+        <label asp-for="ComputerName">Введите название комьютера</label>
+        <input asp-for="Discount" placeholder="Скидка" />
+        <input asp-for="Created" placeholder ="Дата создания" />
+        <input type="submit" />
+    </form>
+</div>
+<div>
+ 
+     @Model.ErrorMessage
+    
+</div>
