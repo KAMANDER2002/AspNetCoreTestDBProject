@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FZ/KLOfwVPznpZfY7jPXPNWeWLLe8rClQRoYRpJ/wuc=",
+  "Hash": "2M3roWuRPi8fAC2mCeXSx+ln2sXlKoj0v2+tm7dREWA=",
   "Source": "CompMarketReal",
   "BasePath": "_content/CompMarketReal",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\K A M A N D E R\\source\\repos\\CompMarketReal\\wwwroot\\images\\asus.jpg",
+      "SourceId": "CompMarketReal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\K A M A N D E R\\source\\repos\\CompMarketReal\\wwwroot\\",
+      "BasePath": "_content/CompMarketReal",
+      "RelativePath": "images/asus.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\asus.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\K A M A N D E R\\source\\repos\\CompMarketReal\\wwwroot\\images\\Mak-book.jpg",
+      "SourceId": "CompMarketReal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\K A M A N D E R\\source\\repos\\CompMarketReal\\wwwroot\\",
+      "BasePath": "_content/CompMarketReal",
+      "RelativePath": "images/Mak-book.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Mak-book.jpg"
     },
     {
       "Identity": "C:\\Users\\K A M A N D E R\\source\\repos\\CompMarketReal\\wwwroot\\js\\site.js",

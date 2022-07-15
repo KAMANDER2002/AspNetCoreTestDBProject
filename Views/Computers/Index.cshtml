@@ -1,21 +1,34 @@
 ﻿@using CompMarketReal.Models.Data.Tovars
 @using CompMarketReal.Models.Repositorys.TovarsRepositorys.Interfaces
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Каталог";
    
 }
 @model IEnumerable<Computer>
 
-<h1>Index</h1>
+<h1>Наш каталог компьютеров</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4">
 @foreach(var comp in Model)
 {
-    <h3>@comp.ComputerName</h3>
-    <h3>@comp.Created</h3>
-    <h3>@comp.Description</h3>
-    <h3>@comp.Price</h3>
-    <a asp-action="DeleteTovar" asp-route-id="@comp.id">Удалить товар</a>
-    <a asp-action="UppDateComputer" asp-route-id="@comp.id">Редактировать товар</a>
+      <div class="col">
+    <div class="card" style="min-height: 500px;">
+   <img src="@comp.imageSource" class="card-img-top">
+    <div class="card-body h-50">
+   <h5 class="card-title">@comp.ComputerName</h5>
+   <p class="card-text">
+   <div>Дата создания: @Convert.ToDateTime(comp.Created).ToString("d") </div>
+   <div> Описание: @comp.Description </div>
+   <div> Цена: @comp.Price руб </div>
+    </p>
+    <div class="card-footer card-link">
+    <a asp-action="DeleteTovar" asp-route-id="@comp.id" class="btn btn-danger card-link">Удалить товар</a>
+    <a asp-action="UppDateComputer" asp-route-id="@comp.id" class="btn btn-success card-link">Редактировать товар</a>
+    </div>
+    </div>
+    </div>
+    </div>
 }
+</div>
 <div>
-    <a asp-action="AddTovar">Добавить новый пк</a>
+    <a asp-action="AddTovar" class="btn btn-primary" style="margin-top: 30px;">Добавить новый пк</a>
 </div>
